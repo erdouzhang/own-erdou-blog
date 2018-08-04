@@ -15,9 +15,9 @@ baseurl: "/own-erdou-blog"                            # for example, '/blog' if 
 # SNS settings
 RSS: false
 # weibo_username:
-zhihu_username:     movesan
-github_username:    movesan
-twitter_username:   movesanY
+zhihu_username:     erdouzhang
+github_username:    erdouzhang
+twitter_username:   erdou
 google_username:    105717439479725668107/posts
 # facebook_username:
 # linkedin_username:  firstname-lastname-idxxxx
