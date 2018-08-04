@@ -1,11 +1,11 @@
 # Site settings
 title: Movesan Blog
-SEOTitle: 慕杉的博客 | Movesan Blog
+SEOTitle: erdoudou的博客 | erdoudou Blog
 header-img: img/home-bg-o.jpg
-email: nahsumu@gmail.com
+email: erdouzhang@163.com
 description: "May Your Heart Be The Map"
-keyword: "Movesan Blog"
-url: "http://erdouzhang.github.io//own-erdou-blog"              # your host, for absolute URL
+keyword: "erdoudou Blog"
+url: "http://erdouzhang.github.io/own-erdou-blog"              # your host, for absolute URL
 baseurl: "/own-erdou-blog"                            # for example, '/blog' if your blog hosted on 'host/blog'
 
 
