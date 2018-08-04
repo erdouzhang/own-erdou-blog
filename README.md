@@ -1,4 +1,4 @@
-# Movesan Blog
+# erdoudou Blog
 
 ### [我的博客在这里 &rarr;](https://erdouzhang.github.io/own-erdou-blog/)
 
