@@ -1,6 +1,6 @@
 # Movesan Blog
 
-### [我的博客在这里 &rarr;](http://movesan.me)
+### [我的博客在这里 &rarr;](https://erdouzhang.github.io/own-erdou-blog/)
 
 这个博客将用于分享自己的生活心得以及一些技术学习笔记，欢迎大家交流讨论
 
