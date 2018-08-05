@@ -108,11 +108,11 @@
 </footer>
 
 <!-- background music start -->
-<script src=" {{ post.baseurl }}/js/swfobject.js"></script>
-<script src="{{ post.baseurl }}/js/1bit.js"></script>
+<script src="{{ site.baseurl }}/js/swfobject.js"></script>
+<script src="{{ site.baseurl }}/js/1bit.js"></script>
 
 <script>
-    oneBit = new OneBit('/js/1bit.swf');
+    oneBit = new OneBit('{{ site.baseurl }}/js/1bit.swf');
     oneBit.ready(function() {
       oneBit.specify('color', '#000000');
       oneBit.specify('background', '#FFFFFF');
