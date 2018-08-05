@@ -7,7 +7,7 @@ author:     "Erdou"
 header-img: "img/post-bg/post-bg-2017.jpg"
 catalog: true
 tags:
-    - 生活1
+    - 生活1 
 ---
 
 > “Yeah It's on. ”
