@@ -4,7 +4,7 @@ title:      "《Javascript高级程序设计》(一)"
 subtitle:   " \" 延迟脚本和异步脚本\""
 date:       2018-08-06 20:15:00
 author:     "Erdou"
-header-img: "/img/post-bg/post-bg-2018.jpg"
+header-img: "img/post-bg/post-bg-2018.jpg"
 catalog: true
 tags:
     - javascript

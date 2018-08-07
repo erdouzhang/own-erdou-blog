@@ -4,7 +4,7 @@ title:      "双城记"
 subtitle:   " \" 狄更斯\""
 date:       2018-08-06 20:15:00
 author:     "Erdou"
-header-img: "/img/post-bg/post-bg-2018.jpg"
+header-img: "img/post-bg/post-bg-2018.jpg"
 catalog: false
 tags:
     - javascript
