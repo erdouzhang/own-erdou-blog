@@ -7,7 +7,7 @@ author:     "Erdou"
 header-img: "img/post-bg/post-bg-life.jpg"
 catalog: true
 tags:
-    - javascript
+    - life
 ---
 
 > “just do it!”
