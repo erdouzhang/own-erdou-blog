@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "双城记"
-subtitle:   "\狄更斯\"
+subtitle:   " \" 狄更斯\""
 date:       2018-08-06 20:15:00
 author:     "Erdou"
 header-img: "img/post-bg/post-bg-life.jpg"
