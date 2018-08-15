@@ -1,0 +1,56 @@
+---
+layout:     post
+title:      "Javascript高级应用"
+subtitle:   " \"变量、闭包、作用域、类型 \""
+date:       2018-08-08 20:15:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-life.jpg"
+catalog: true
+tags:
+    - javascript
+---
+
+> “javascript-高级应用”
+
+## 变量的提升与词法解释
+   
+
+
+
+
+---
+
+## 同名变量，函数声明，表达式声明函数提升规则
+
+
+
+---
+
+## this关键字详解
+
+---
+
+## 对象在内存中的表现形式
+
+---
+
+## js 3钟引用类型（函数、数组、对象）
+
+
+
+---
+
+## 函数表达式、闭包的应用、模块化开发
+
+
+---
+
+
+## 原型对象
+
+
+---
+
+## 函数原型链
+
+---
