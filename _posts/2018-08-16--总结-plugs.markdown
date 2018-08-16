@@ -16,138 +16,138 @@ tags:
 
 1. 参考 <a herf="http://gallery.echartsjs.com/editor.html?c=pictorialBar-dotted">在线</a>
 2. 基础配置：
-// Generate data
-var category = [];
-var dottedBase = +new Date();
-var lineData = [];
-var barData = [];
+	// Generate data
+	var category = [];
+	var dottedBase = +new Date();
+	var lineData = [];
+	var barData = [];
 
-for (var i = 0; i < 20; i++) {
-	var date = new Date(dottedBase += 1000 * 3600 * 24);
-	category.push([
-		date.getFullYear(),
-		date.getMonth() + 1,
-		date.getDate()
-	].join('-'));
-	var b = Math.random() * 200;
-	var d = Math.random() * 200;
-	barData.push(b)
-	lineData.push(d + b);
-}
+	for (var i = 0; i < 20; i++) {
+		var date = new Date(dottedBase += 1000 * 3600 * 24);
+		category.push([
+			date.getFullYear(),
+			date.getMonth() + 1,
+			date.getDate()
+		].join('-'));
+		var b = Math.random() * 200;
+		var d = Math.random() * 200;
+		barData.push(b)
+		lineData.push(d + b);
+	}
 
 
-// option
-option = {
-	backgroundColor: '#0f375f', // 整体的背景色
-	tooltip: { // 鼠标滑过提示
-		trigger: 'axis',
-		axisPointer: {
-			type: 'shadow', // 
-			label: {
-				show: true,
-				backgroundColor: '#333'
-			}
-		}
-	},
-	legend: { // 图例显示
-		data: ['折线', '圆柱'],
-		textStyle: {
-			color: '#ccc'
-		},
-		selected: {
-			'折线': false // 默认不显示
-		}
-	},
-	xAxis: {
-		data: category, // x轴显示数据（数组动态添加）
-		axisLine: {
-			lineStyle: { // 坐标轴样式
-				color: '#ccc', // 字体颜色
-				width: 1 // 横坐标轴线线宽，默认  1
-			}
-		}
-	},
-	yAxis: {
-		// data:[12,34,56,67,78], 自定义显示数据
-		splitLine: {
-			show: false
-		}, // y轴是否显示分割线
-		axisLine: { // 坐标轴样式
-			lineStyle: {
-				color: '#ccc',
-			}
-		}
-	},
-	series: [{ //  系列列表。每个系列通过 type 决定自己的图表类型
-		name: '折线', // 系列名称，用于tooltip的显示，legend 的图例筛选(可设置)
-		type: 'line',
-		smooth: false, // 是否平滑曲线显示 
-		showAllSymbol: true, // 只在主轴为类目轴（axis.type 为 'category'）时有效
-		symbol: 'emptyCircle', // 标记的图形
-		symbolSize: 5, // 标记的图形大小（手机端）
-		data: lineData // 数据显示
-	}, {
-		name: '圆柱', // 柱状图名称
-		type: 'bar', // 类型
-		barWidth: 10, // 柱条的宽度，不设时自适应。支持设置成相对于类目宽度的百分比
-		itemStyle: { // 图形样式
-			normal: {
-				barBorderRadius: 0, //圆角半径，单位px，支持传入数组分别指定 4 个圆角半径
-				color: new echarts.graphic.LinearGradient(
-					0, 0, 0, 1, [ // 颜色过度
-						{
-							offset: 0,
-							color: '#14c8d4'
-						}, // 红
-						{
-							offset: 1,
-							color: '#43eec6'
-						}
-					]
-				)
+	// option
+	option = {
+		backgroundColor: '#0f375f', // 整体的背景色
+		tooltip: { // 鼠标滑过提示
+			trigger: 'axis',
+			axisPointer: {
+				type: 'shadow', // 
+				label: {
+					show: true,
+					backgroundColor: '#333'
+				}
 			}
 		},
-		data: barData // 数据展示
-	}, {
-		name: '折线',
-		type: 'bar',
-		barGap: '-100%',
-		barWidth: 10,
-		itemStyle: {
-			normal: {
-				color: new echarts.graphic.LinearGradient(
-					0, 0, 0, 1, [ // 颜色过度(不用时去除)
-						{
-							offset: 0,
-							color: 'rgba(20,200,212,0.5)'
-						},
-						// {offset: 0.2, color: 'rgba(20,200,212,0.2)'},
-						{
-							offset: 1,
-							color: 'rgba(20,200,212,0)'
-						}
-					]
-				)
+		legend: { // 图例显示
+			data: ['折线', '圆柱'],
+			textStyle: {
+				color: '#ccc'
+			},
+			selected: {
+				'折线': false // 默认不显示
 			}
 		},
-		z: -12, // 组件的所有图形的z值。控制图形的前后顺序。z值小的图形会被z值大的图形覆盖
-		data: lineData // 数据展示
-	}, {
-		name: 'dotted',
-		type: 'pictorialBar',
-		symbol: 'rect',
-		itemStyle: {
-			normal: {
-				color: '#0f375f'
+		xAxis: {
+			data: category, // x轴显示数据（数组动态添加）
+			axisLine: {
+				lineStyle: { // 坐标轴样式
+					color: '#ccc', // 字体颜色
+					width: 1 // 横坐标轴线线宽，默认  1
+				}
 			}
 		},
-		symbolRepeat: false, //指定图形元素是否重复
-		symbolSize: [5, 4], // 可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10
-		symbolMargin: 1, // 只有当 symbolRepeat 被使用时有意义。
-		z: -10,
-		data: lineData // 数据展示
-	}]
-}; 
+		yAxis: {
+			// data:[12,34,56,67,78], 自定义显示数据
+			splitLine: {
+				show: false
+			}, // y轴是否显示分割线
+			axisLine: { // 坐标轴样式
+				lineStyle: {
+					color: '#ccc',
+				}
+			}
+		},
+		series: [{ //  系列列表。每个系列通过 type 决定自己的图表类型
+			name: '折线', // 系列名称，用于tooltip的显示，legend 的图例筛选(可设置)
+			type: 'line',
+			smooth: false, // 是否平滑曲线显示 
+			showAllSymbol: true, // 只在主轴为类目轴（axis.type 为 'category'）时有效
+			symbol: 'emptyCircle', // 标记的图形
+			symbolSize: 5, // 标记的图形大小（手机端）
+			data: lineData // 数据显示
+		}, {
+			name: '圆柱', // 柱状图名称
+			type: 'bar', // 类型
+			barWidth: 10, // 柱条的宽度，不设时自适应。支持设置成相对于类目宽度的百分比
+			itemStyle: { // 图形样式
+				normal: {
+					barBorderRadius: 0, //圆角半径，单位px，支持传入数组分别指定 4 个圆角半径
+					color: new echarts.graphic.LinearGradient(
+						0, 0, 0, 1, [ // 颜色过度
+							{
+								offset: 0,
+								color: '#14c8d4'
+							}, // 红
+							{
+								offset: 1,
+								color: '#43eec6'
+							}
+						]
+					)
+				}
+			},
+			data: barData // 数据展示
+		}, {
+			name: '折线',
+			type: 'bar',
+			barGap: '-100%',
+			barWidth: 10,
+			itemStyle: {
+				normal: {
+					color: new echarts.graphic.LinearGradient(
+						0, 0, 0, 1, [ // 颜色过度(不用时去除)
+							{
+								offset: 0,
+								color: 'rgba(20,200,212,0.5)'
+							},
+							// {offset: 0.2, color: 'rgba(20,200,212,0.2)'},
+							{
+								offset: 1,
+								color: 'rgba(20,200,212,0)'
+							}
+						]
+					)
+				}
+			},
+			z: -12, // 组件的所有图形的z值。控制图形的前后顺序。z值小的图形会被z值大的图形覆盖
+			data: lineData // 数据展示
+		}, {
+			name: 'dotted',
+			type: 'pictorialBar',
+			symbol: 'rect',
+			itemStyle: {
+				normal: {
+					color: '#0f375f'
+				}
+			},
+			symbolRepeat: false, //指定图形元素是否重复
+			symbolSize: [5, 4], // 可以用数组分开表示宽和高，例如 [20, 10] 表示标记宽为20，高为10
+			symbolMargin: 1, // 只有当 symbolRepeat 被使用时有意义。
+			z: -10,
+			data: lineData // 数据展示
+		}]
+	}; 
 3. 后台接口数据最终转换成数组形式(动态改变数据设置，series[0].data=[],series[1].data=[],......)
 	首先要清空一下数据，重新赋值
 
