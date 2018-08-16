@@ -4,13 +4,13 @@ title:      "echarts"
 subtitle:   " \" 总结\""
 date:       2018-08-16 22:10:00
 author:     "Erdou"
-header-img: "img/"
+header-img: "img/post-bg/litter_girl.jpg"
 catalog: false
 tags: 
-    - echarts图表
+    - 日志
 ---
 
-> ”
+> “Happy little child launching paper origami boat while floating in boat on lake”
 
 ## echarts图表（折线,圆柱 手机app端显示、可伸缩）
 
