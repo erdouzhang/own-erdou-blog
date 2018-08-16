@@ -5,7 +5,7 @@ subtitle:   " \" 总结\""
 date:       2018-08-16 22:10:00
 author:     "Erdou"
 header-img: "img/post-bg/litter_girl.jpg"
-catalog: false
+catalog: true
 tags: 
     - 日志
 ---
