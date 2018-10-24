@@ -73,8 +73,7 @@ layout: default
     			{{ content }}
     		</div>
     <!-- Sidebar Container -->
-            <div class="
-                col-lg-3 col-lg-offset-0
+            <div class="col-lg-3 col-lg-offset-0
                 col-md-3 col-md-offset-0
                 col-sm-12
                 col-xs-12
@@ -96,7 +95,6 @@ layout: default
                     </div>
                 </section>
                 {% endif %}
-
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
                     <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
@@ -208,6 +206,9 @@ layout: default
                     {% endfor %}
                 </ul>
                 {% endif %}
+                <hr />
+                <h5>访问量</h5>
+                <section>{{site.total}}</section>
     		</div>
         {% endif %}
 	</div>
