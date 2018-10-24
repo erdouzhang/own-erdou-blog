@@ -122,5 +122,8 @@ friends: [
     },{
         title: "Hux's Blog",
         href: "https://huangxuan.me/"
+    },{
+        title: "我的博客",
+        href: "https://erdouzhang.github.io/own-erdou-blog/"
     }
 ]
