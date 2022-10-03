@@ -7,3 +7,5 @@ npm-debug.log
 *.sh
 _posts/2018-08-13--enterCompany-2018.markdown
 _posts/2018-08-09-md-2018.markdown
+doc/*.md
+yarn.lock
