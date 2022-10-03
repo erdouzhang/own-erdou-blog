@@ -62,14 +62,13 @@ layout: default
 
 				        {{ content }}
 
-                <hr>
-
+                <hr> 
                 <!-- 生成post二维码 start -->
-                <p style="margin:0px auto;text-align:center; ">要下班了？扫一扫，地铁上阅读 ：)</p>
+                <p style="margin:0px auto;text-align:center; ">要下班了？扫一扫，地铁上阅读😃/p>
                 <div id="qrcodeCanvas" style="margin:0px auto;text-align:center; "></div>
                 <!-- 生成post二维码 end -->
 
-                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <!-- <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
                     <div>生活只有眼前的苟且，哪有诗和远方 ：(</div>
                     <button type="button" class="btn btn-warning" onclick="var qr = document.getElementById(&#39;QR&#39;);
                         if (qr.style.display === &#39;none&#39;) {qr.style.display=&#39;block&#39;;} else {qr.style.display=&#39;none&#39;}">微信打赏</button>
@@ -78,10 +77,8 @@ layout: default
                             <a href="{{site.url}}/img/wechat_pay.png" class="fancybox" rel="group"><img id="wechat_qr" src="{{site.url}}/img/wechat_pay.png" alt="WeChat Pay"></a>
                         </div>
                     </div>
-                </div>
-
-                <hr>
-
+                </div> -->
+                <!-- <hr> -->
                 {% if site.duoshuo_share && site.duoshuo_username %}
                 <!-- 多说 Share start -->
                 <div class="ds-share"
@@ -170,13 +167,11 @@ layout: default
         {% endif %}
 
     <!-- Sidebar Container -->
-            <div class="
-                col-lg-8 col-lg-offset-2
+            <div class="col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
-
                 <!-- Featured Tags -->
-                {% if site.featured-tags %}
+                <!-- {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
@@ -190,10 +185,10 @@ layout: default
         				{% endfor %}
         			</div>
                 </section>
-                {% endif %}
+                {% endif %} -->
 
                 <!-- Friends Blog -->
-                {% if site.friends %}
+                <!-- {% if site.friends %}
                 <hr>
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
@@ -201,7 +196,7 @@ layout: default
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
-                {% endif %}
+                {% endif %} -->
             </div>
         </div>
     </div>
