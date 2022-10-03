@@ -1,0 +1,28 @@
+---
+layout:     post
+title:      "Vue"
+subtitle:   " \"Vue.js\""
+date:       2022-10-03 12:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - vue
+---
+
+> “Yeah It's on. starting”
+
+
+### 前言
+
+---
+
+### 变换侦测
+    变化侦测是系统的核心，没有他就没有重新渲染。变化侦测的作用是侦测数据的变化。当数据变化时，会通知视图进行相应的更新。
+---
+
+### 实现一个侦测变化
+
+    在javascript中如何实现监测一个对象的变化？ES6中有两种方式监测对象的变化，使用Object.defineProperty()和ES6 中的Proxy.
+
+---
