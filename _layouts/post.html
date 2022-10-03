@@ -28,11 +28,11 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <div class="tags">
+                    <!-- <div class="tags">
                         {% for tag in page.tags %}
                         <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
                         {% endfor %}
-                    </div>
+                    </div> -->
                     <h1>{{ page.title }}</h1>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
@@ -42,7 +42,10 @@ layout: default
                     {% comment %} endif {% endcomment %}
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                     <!-- LeanCloud 统计访问量 -->
-                    <span data-hk-page="current"> - </span>&nbsp;Views<span class="pause"></span>
+                    {% for tag in page.tags %}
+                    <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                    {% endfor %}
+                    <!-- <span data-hk-page="current"> - </span>&nbsp;Views<span class="pause"></span> -->
                 </div>
             </div>
         </div>
@@ -62,10 +65,10 @@ layout: default
 
 				        {{ content }}
 
-                <hr> 
+                <hr>
                 <!-- 生成post二维码 start -->
-                <p style="margin:0px auto;text-align:center; ">要下班了？扫一扫，地铁上阅读😃/p>
-                <div id="qrcodeCanvas" style="margin:0px auto;text-align:center; "></div>
+                <p style="margin:0px auto;text-align:center; ">要下班了？扫一扫，地铁上阅读😃</p>
+                <div id="qrcodeCanvas" style="margin:0px auto;text-align:center;"></div>
                 <!-- 生成post二维码 end -->
 
                 <!-- <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
