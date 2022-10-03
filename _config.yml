@@ -67,14 +67,14 @@ disqus_username: movesan
 
 # Google Analytics
 ga_track_id: 'UA-91543310-1'            # Format: UA-xxxxxx-xx
-ga_domain: movesan.me                   # 
+ga_domain: movesan.me                   #
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "时间就像海绵里的水<br>挤一挤，总会没的"
-sidebar-avatar: /own-erdou-blog/img/qrcode_for_gh_98e6bed26343_258.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /own-erdou-blog/img/p_avtar.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
