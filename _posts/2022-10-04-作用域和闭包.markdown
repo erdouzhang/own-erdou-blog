@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "作用域和闭包"
+subtitle:   ""
+date:       2022-10-04 12:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - javascript
+---
+
+> “Yeah It's on. starting... scope and dynamic scope”
+
+### 1.词法作用域和动态作用域
+
+### 2.JavaScript中的作用域和作用域链
+
+### 3.JavaScript的执行上下文栈
+
+### 4.this原理以及不同场景this的指向
+
+### 5.闭包的实现原理和作用,闭包在开发中的实际应用
+
+### 6.堆栈溢出和内存泄漏的原理,如何防止
+
+### 7.处理循环的异步操作
+
+### 8.模块化解决的实际问题，模块化方案及原理

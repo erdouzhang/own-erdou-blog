@@ -1,0 +1,29 @@
+---
+layout:     post
+title:      "语法和API"
+subtitle:   ""
+date:       2022-10-04 00:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - javascript
+---
+
+> “Yeah It's on. starting... API”
+
+### 1.ECMAScript和JavaScript关系
+
+### 2.ES5、ES6语法规范
+
+### 3.JavaScript中的全局对象、全局函数、全局属性
+
+Date,Math,Error
+
+### 4.Map,reduce,filter等高阶函数解决的问题
+
+### 5.setInterval使用，使用settimeout实现setInterval
+
+### 6.正则表达式应用
+
+### 7.Javascript异常处理方式,统一异常处理方案

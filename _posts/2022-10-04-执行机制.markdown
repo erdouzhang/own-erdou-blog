@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "执行机制"
+subtitle:   ""
+date:       2022-10-04 12:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - javascript
+---
+
+> “Yeah It's on. starting... run environment”
+
+### 1.try里面放return, finally还会执行,内部机制是怎样的
+
+### 2.JavaScript如何实现异步编程，EventLoop(事件循环)机制是怎样的
+
+### 3.宏任务和微任务分别有哪些
+
+### 4.复杂的异步嵌套逻辑分析(分析方法)
+
+### 5.Promise实现串行机制
+
+### 6.浏览器中的事件循环(EventLoop)机制和Node的差异
+
+### 7.页面海量数据的加载,避免页面卡顿

@@ -7,9 +7,7 @@ author:     "Movesan"
 header-img: "img/post-bg/post-bg-http.png"
 catalog: true
 tags:
-    - HTTP
-    - 网络协议
-
+    - HTTP、网络协议
 ---
 
 ## 引言

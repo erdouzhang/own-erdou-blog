@@ -1,0 +1,25 @@
+---
+layout:     post
+title:      "原型和原型链"
+subtitle:   ""
+date:       2022-10-04 00:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - javascript
+---
+
+> “Yeah It's on. starting...prototype”
+
+### 1.原型设计模式及Javascript中的原型规则
+
+### 2.instanceof底层实现的原理
+
+### 3.实现继承的几种方式及他们的优缺点
+
+### 4.开源项目中应用原型继承的案例
+
+### 5.描述new一个对象的详细过程, 手动实现一个new操作符
+
+### 6.ES6中Class构造及继承的底层实现原理

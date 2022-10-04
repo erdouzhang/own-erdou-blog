@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      "2022-\" It's so terrible "\"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2012-10-04 12:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - 生活
+---
+
+> “so far, It's so terrible.”
+
+
+## 前言
+
+
+---
+
+## 回顾2018-2022
+   May Your Heart Be The Map！
+---
+
+## 2022 TODO LIST
+
+一件事只有他看得到的小目标或节点才可能坚持下去吧。
+
+* 坚持维护博客
+
+  前期博客文章主要为自己学习总结整理，慢慢的熟悉领悟之后，会写独立原创文章。
+
+* 维护自己的网站  
+
+  开通一个属于自己的网站
+
+* 掌握Python
+
+  通过Python写一些爬虫项目，做一个自己一直想做的网站项目或维护一个GitHub项目。
+
+* 流利说英语
+
+  这个目标从大学时就开始有，零零碎碎的也没有看到成果，难道非要写在这里？
+
+* 摄影
+
+  真的，一直挂念的东西就不要放下！
+
+---
+
+## 后记
