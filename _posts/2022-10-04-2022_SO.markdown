@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "2022-\" It's so terrible "\"
+title:      "2022、It's so terrible"
 subtitle:   " \"em..., em....\""
 date:       2012-10-04 12:00:00
 author:     "Erdou"
