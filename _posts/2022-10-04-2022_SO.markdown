@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "2022-\" It's so terrible "\"
-subtitle:   " \"Hello World, Hello Blog\""
+subtitle:   " \"em..., em....\""
 date:       2012-10-04 12:00:00
 author:     "Erdou"
 header-img: "img/post-bg/post-bg-2017.jpg"
@@ -13,18 +13,21 @@ tags:
 > “so far, It's so terrible.”
 
 
-## 前言
-
-
+### 前言
+    “so far, It's so terrible.
 ---
 
-## 回顾2018-2022
+### 回顾2018-2022
    May Your Heart Be The Map！
 ---
 
-## 2022 TODO LIST
+### 2022 TODO LIST
 
 一件事只有他看得到的小目标或节点才可能坚持下去吧。
+
+* Find New Job For last Month
+
+  2022
 
 * 坚持维护博客
 
@@ -41,6 +44,9 @@ tags:
 * 流利说英语
 
   这个目标从大学时就开始有，零零碎碎的也没有看到成果，难道非要写在这里？
+
+* learn new online store
+
 
 * 摄影
 
