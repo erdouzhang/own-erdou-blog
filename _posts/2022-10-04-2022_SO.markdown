@@ -2,7 +2,7 @@
 layout:     post
 title:      "2022、It's so terrible"
 subtitle:   " \"em..., em....\""
-date:       2012-10-04 12:00:00
+date:       2022-10-04 12:00:00
 author:     "Erdou"
 header-img: "img/post-bg/post-bg-2017.jpg"
 catalog: true
@@ -14,11 +14,11 @@ tags:
 
 
 ### 前言
-    “so far, It's so terrible.
----
+
+    “so far, It's so terrible.  
 
 ### 回顾2018-2022
-   May Your Heart Be The Map！
+    May Your Heart Be The Map！
 ---
 
 ### 2022 TODO LIST
