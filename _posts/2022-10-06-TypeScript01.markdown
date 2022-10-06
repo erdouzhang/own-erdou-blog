@@ -141,6 +141,7 @@ tags:
 - 组件约束
 - abstract
 #### type、interface、abstract对比
- |type|interface|abstract
- 变量|可以|可以|可以
- 函数声明|可以|可以|不可以
+
+| Header One     | Header Two     |
+| :------------- | :------------- |
+| Item One       | Item Two       |
