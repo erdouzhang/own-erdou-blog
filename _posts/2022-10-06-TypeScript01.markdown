@@ -95,7 +95,6 @@ tags:
 - 属性要声明才能使用
 - 访问修饰符(public, protect, private)
 - 其他访问修饰符(static, readOnly)
-
 ```
   class User {
     name:string;
@@ -112,7 +111,6 @@ tags:
   console.log(User.a); // 访问静态变量
   console.log(user);
   user.count = 3434; // count属性不能被修改，已被声明readOnly
-
 ```
 #### abstruct抽象
 - 自身不能实例化(不能使用new创建实例)，只能提供基本抽象基类
@@ -142,6 +140,7 @@ tags:
 - abstract
 #### type、interface、abstract对比
 
-| Header One     | Header Two     |
-| :------------- | :------------- |
-| Item One       | Item Two       |
+|         | type |interface|abstract|
+| :----   | :----|:----|:----|
+| 变量     | 可以 | 可以 | 可以 |
+| 函数签名 | 可以 | 可以 | 不可以 |
