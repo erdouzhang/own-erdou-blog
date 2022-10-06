@@ -1,0 +1,154 @@
+---
+layout:     post
+title:      "TypeScript-类型"
+subtitle:   ""
+date:       2022-10-06 12:00:00
+author:     "Erdou"
+header-img: "img/post-bg/post-bg-2017.jpg"
+catalog: true
+tags:
+    - ts
+---
+
+> “Yeah It's on. starting...ts”
+
+#### 基础类型声明
+- ts中好多东西可以加类型:eg. 变量、参数、函数返回值
+- 基本类型定义：number|string|boolean|null
+- 引用类型: Array
+```
+let a:number;   a= 123;
+  let b:string;   b= 'abc';
+  let c:boolean;  c = false;
+  let d:null;     d = null;
+  // Array(2种写法)
+  let a:Array<string>; a= ['a','b', 'c'];
+  let a:number[];      a= [1,2,3];
+  let a:boolean:[];    a = [true, false]
+  // Object
+  let a:{ a:number, b: boolean} = { a: 1234, b: false};
+
+  // type of self(自定义类型)
+
+  type C = { user: string, age: number};
+
+  let user:C = {user:"zhangsan", age: 12};
+
+  // function 函数参数类型
+  function show(a:number, b:number){};
+  show(1,2);
+  function show(a:number, b?:number){}; // b参数 可选
+  show(1);
+```
+#### 函数签名
+- 函数定义使用
+- ts中函数签名
+```
+  // js中函数, user:用户名, password:密码, cb回调函数
+  function login(user, password, cb) {
+  //....
+  }
+  // 调用
+  function login("zhangsna", 123, function() {
+   // ....
+  });
+```
+- 函数参数类型及返回值类型，(a:number, b:number):number=>a+b
+```
+  //函数类型(签名)的写法
+  (number, number):number=>number
+  //自定义类型
+  type C = (a:number, b:number)=>number;
+
+  function login(user:string, password: string, cb:C){ }
+  //调用
+  login("zhangsna",123, function(a:number, b:number) { });
+
+```
+#### interface
+- 接口定义
+- type定义与interface定义交集
+```
+ interface serverData = {
+    error?: boolean, // 可选
+    data: object
+ };
+
+ let data: serverData;
+ data = {
+   error: false,
+   data: []
+ }
+
+ --------------------------
+  // type
+  type Serve = {
+    error: boolean,
+    data: object
+  };
+
+  let data:Serve = {
+    error: true,
+    data: {}
+  }
+```
+#### Class类
+- ts中类的定义
+- 属性要声明才能使用
+- 访问修饰符(public, protect, private)
+- 其他访问修饰符(static, readOnly)
+```
+  class User {
+      name:string;
+      age:number;
+
+      readOnly count:boolean = true;
+
+      static a:number = 124; // 静态修饰符，可直接类访问，不需要实例化
+      constructor(name, age){
+        this.name= name;
+        this.age =age;
+        this.count =count;
+      }
+  }
+  let user = new User("zhang", 123);
+  console.log(User.a); // 访问静态变量
+  console.log(user);
+  user.count = 3434; // count属性不能被修改，已被声明readOnly
+
+```
+#### abstruct抽象
+- 自身不能实例化(不能使用new创建实例)，只能提供基本抽象基类
+```
+   abstract class Component{
+      public abstruct render():string;
+      public forceUpdate():void{
+          this.render();
+      }
+   }
+   class Header extends Component {
+       public render() {
+         return "Header"
+       }
+   }
+   class Footer extends Component {
+     public render() {
+       return "Footer"
+     }
+   }
+```
+#### ts中的约束
+- type
+- interface
+- 访问修饰符public、private、protect、readOnly, static
+- 组件约束
+- abstract
+
+
+#### type interface abstract区别
+
+           type        interface        abstract
+
+变量        可以          可以             可以
+
+函数签名     可以         可以             不可以
