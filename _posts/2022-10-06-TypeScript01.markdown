@@ -12,7 +12,7 @@ tags:
 
 > “Yeah It's on. starting...ts”
 
-####基础类型声明
+#### 基础类型声明
 - ts中好多东西可以加类型:eg.变量、参数、函数返回值
 - 基本类型定义:number、string、boolean、null
 - 引用类型: Array
@@ -40,7 +40,7 @@ tags:
   function show(a:number, b?:number){}; // b参数 可选
   show(1);
 ```
-####函数签名
+#### 函数签名
 - 函数定义使用
 - ts中函数签名
 ```
@@ -64,7 +64,7 @@ function login(user:string, password: string, cb:C){ }
 login("zhangsna",123, function(a:number, b:number) {
 });
 ```
-####interface
+#### interface
 - 接口定义
 - type定义与interface定义交集
 ```
@@ -90,7 +90,7 @@ login("zhangsna",123, function(a:number, b:number) {
     data: {}
   }
 ```
-####Class类
+#### Class类
 - ts中类的定义
 - 属性要声明才能使用
 - 访问修饰符(public, protect, private)
@@ -116,7 +116,7 @@ login("zhangsna",123, function(a:number, b:number) {
   user.count = 3434; // count属性不能被修改，已被声明readOnly
 
 ```
-####abstruct抽象
+#### abstruct抽象
 - 自身不能实例化(不能使用new创建实例)，只能提供基本抽象基类
 ```
    abstract class Component{
@@ -136,14 +136,13 @@ login("zhangsna",123, function(a:number, b:number) {
      }
    }
 ```
-####ts中的约束
+#### ts中的约束
 - type
 - interface
 - 访问修饰符public、private、protect、readOnly, static
 - 组件约束
 - abstract
-####type、interface、abstract对比
- |           | type     |interface  |abstract  |
- | :---------| :--------|:----------|:---------|
- | 变量      | 可以      |可以       |可以       |
- | 函数签名   | 可以      |可以       |不可以     |
+#### type、interface、abstract对比
+|     | type | interface | abstract|
+| 变量|可以|可以|可以|
+| 函数签名|可以|可以|不可以|
