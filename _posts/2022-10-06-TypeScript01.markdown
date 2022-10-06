@@ -12,12 +12,12 @@ tags:
 
 > “Yeah It's on. starting...ts”
 
-#### 基础类型声明
-- ts中好多东西可以加类型:eg. 变量、参数、函数返回值
-- 基本类型定义：number|string|boolean|null
+####基础类型声明
+- ts中好多东西可以加类型:eg.变量、参数、函数返回值
+- 基本类型定义:number、string、boolean、null
 - 引用类型: Array
 ```
-let a:number;   a= 123;
+  let a:number;   a= 123;
   let b:string;   b= 'abc';
   let c:boolean;  c = false;
   let d:null;     d = null;
@@ -40,7 +40,7 @@ let a:number;   a= 123;
   function show(a:number, b?:number){}; // b参数 可选
   show(1);
 ```
-#### 函数签名
+####函数签名
 - 函数定义使用
 - ts中函数签名
 ```
@@ -55,32 +55,30 @@ let a:number;   a= 123;
 ```
 - 函数参数类型及返回值类型，(a:number, b:number):number=>a+b
 ```
-  //函数类型(签名)的写法
-  (number, number):number=>number
-  //自定义类型
-  type C = (a:number, b:number)=>number;
-
-  function login(user:string, password: string, cb:C){ }
-  //调用
-  login("zhangsna",123, function(a:number, b:number) { });
-
+//函数类型(签名)的写法
+(number, number):number=>number
+//自定义类型
+type C = (a:number, b:number)=>number;
+function login(user:string, password: string, cb:C){ }
+//调用
+login("zhangsna",123, function(a:number, b:number) {
+});
 ```
-#### interface
+####interface
 - 接口定义
 - type定义与interface定义交集
 ```
- interface serverData = {
+  interface serverData = {
     error?: boolean, // 可选
     data: object
- };
+  };
 
- let data: serverData;
- data = {
+  let data: serverData;
+  data = {
    error: false,
    data: []
- }
+  }
 
- --------------------------
   // type
   type Serve = {
     error: boolean,
@@ -92,11 +90,12 @@ let a:number;   a= 123;
     data: {}
   }
 ```
-#### Class类
+####Class类
 - ts中类的定义
 - 属性要声明才能使用
 - 访问修饰符(public, protect, private)
 - 其他访问修饰符(static, readOnly)
+
 ```
   class User {
       name:string;
@@ -117,7 +116,7 @@ let a:number;   a= 123;
   user.count = 3434; // count属性不能被修改，已被声明readOnly
 
 ```
-#### abstruct抽象
+####abstruct抽象
 - 自身不能实例化(不能使用new创建实例)，只能提供基本抽象基类
 ```
    abstract class Component{
@@ -137,18 +136,14 @@ let a:number;   a= 123;
      }
    }
 ```
-#### ts中的约束
+####ts中的约束
 - type
 - interface
 - 访问修饰符public、private、protect、readOnly, static
 - 组件约束
 - abstract
-
-
-#### type interface abstract区别
-
-           type        interface        abstract
-
-变量        可以          可以             可以
-
-函数签名     可以         可以             不可以
+####type、interface、abstract对比
+ |           | type     |interface  |abstract  |
+ | :---------| :--------|:----------|:---------|
+ | 变量      | 可以      |可以       |可以       |
+ | 函数签名   | 可以      |可以       |不可以     |
