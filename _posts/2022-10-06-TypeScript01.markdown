@@ -55,14 +55,14 @@ tags:
 ```
 - 函数参数类型及返回值类型，(a:number, b:number):number=>a+b
 ```
-//函数类型(签名)的写法
-(number, number):number=>number
-//自定义类型
-type C = (a:number, b:number)=>number;
-function login(user:string, password: string, cb:C){ }
-//调用
-login("zhangsna",123, function(a:number, b:number) {
-});
+  //函数类型(签名)的写法
+  (number, number):number=>number
+  //自定义类型
+  type C = (a:number, b:number)=>number;
+  function login(user:string, password: string, cb:C){ }
+  //调用
+  login("zhangsna",123, function(a:number, b:number) {
+  });
 ```
 #### interface
 - 接口定义
@@ -98,17 +98,15 @@ login("zhangsna",123, function(a:number, b:number) {
 
 ```
   class User {
-      name:string;
-      age:number;
-
-      readOnly count:boolean = true;
-
-      static a:number = 124; // 静态修饰符，可直接类访问，不需要实例化
-      constructor(name, age){
-        this.name= name;
-        this.age =age;
-        this.count =count;
-      }
+    name:string;
+    age:number;
+    readOnly count:boolean = true;
+    static a:number = 124; // 静态修饰符，可直接类访问，不需要实例化
+    constructor(name, age){
+    this.name= name;
+    this.age =age;
+    this.count =count;
+    }
   }
   let user = new User("zhang", 123);
   console.log(User.a); // 访问静态变量
@@ -119,22 +117,22 @@ login("zhangsna",123, function(a:number, b:number) {
 #### abstruct抽象
 - 自身不能实例化(不能使用new创建实例)，只能提供基本抽象基类
 ```
-   abstract class Component{
-      public abstruct render():string;
-      public forceUpdate():void{
-          this.render();
-      }
-   }
-   class Header extends Component {
-       public render() {
-         return "Header"
-       }
-   }
-   class Footer extends Component {
+  abstract class Component{
+    public abstruct render():string;
+    public forceUpdate():void{
+        this.render();
+    }
+  }
+  class Header extends Component {
      public render() {
-       return "Footer"
+       return "Header"
      }
+  }
+  class Footer extends Component {
+   public render() {
+     return "Footer"
    }
+  }
 ```
 #### ts中的约束
 - type
@@ -143,6 +141,7 @@ login("zhangsna",123, function(a:number, b:number) {
 - 组件约束
 - abstract
 #### type、interface、abstract对比
-|     | type | interface | abstract|
-| 变量|可以|可以|可以|
-| 函数签名|可以|可以|不可以|
+|          | type | interface | abstract |
+| -------- | ---- | --------- | -------- |
+| 变量     | 可以 | 可以      | 可以     |
+| 函数声明 | 可以 | 可以      | 不可以   |
